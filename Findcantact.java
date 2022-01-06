@@ -21,9 +21,10 @@ public class Findcantact {
 		driver.findElement(By.linkText("CRM/SFA")).click();
 		driver.findElement(By.linkText("Contacts")).click();
 		driver.findElement(By.linkText("Find Contacts")).click();
-		driver.findElement(By.linkText("Email")).click();
-		driver.findElement(By.name("emailAddress")).sendKeys("babu@testleaf.com");
-		driver.findElement(By.linkText("Find Contacts")).click();
+		driver.findElement(By.xpath("//span[text()='Email']")).click();
+		driver.findElement(By.xpath("//input[@name='emailAddress']")).sendKeys("babu@testleaf.com");
+		driver.findElement(By.xpath("//button[text()='Find Contacts']")).click();
+		
 		driver.close();
 		
 		
