@@ -29,7 +29,7 @@ public class ServiceNow {
 		driver.findElement(By.xpath("//input[@id='user_name']")).sendKeys("admin");
 		driver.findElement(By.xpath("//input[@id='user_password']")).sendKeys("Jagu@123456");
 		driver.findElement(By.xpath("//button[text()='Log in']")).click();
-		driver.findElement(By.xpath("//input[@id='filter']")).sendKeys("incident");
+		driver.findElement(By.xpath("//input[@id='filter']")).sendKeys("incident",Keys.ENTER);
 		driver.findElement(By.xpath("(//div[text()='All'])[2]")).click();
 		driver.switchTo().frame("gsft_main");
 		driver.findElement(By.xpath("//button[text()='New']")).click();
